@@ -91,6 +91,8 @@ tasks {
         (options as? StandardJavadocDocletOptions)?.apply {
             encoding = "UTF-8"
 
+            addStringOption("Xdoclint:none", "-quiet")
+
             // Custom options
             addBooleanOption("html5", true)
             addStringOption("-release", "17")
